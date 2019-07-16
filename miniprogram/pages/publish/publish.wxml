@@ -1,0 +1,28 @@
+<form bindsubmit="commit" report-submit	>
+  <view class='item'>
+    <label>标题</label>
+    <input type='text' value='{{title}}' bindinput='inputTitle'></input>
+  </view>
+  <view class='item'>
+    <label>内容</label>
+    <textarea value='{{content}}' bindinput='inputContent' placeholder='输入心情内容'></textarea>
+  </view>
+  <view class='item'>
+    <label>开启定位</label>
+    <switch checked type='checkbox' color='#32AFF2' bindchange='bindChangeLocation' />
+  </view>
+  <view class='item'>
+    <label>图片</label>
+  </view>
+  <view class='item-images'>
+    <block wx:for='{{uploadImgs}}' wx:key="{{index}}">
+      <image class='images' bindtap='deleteImg' data-fileId="{{item.fileId}}" data-index='{{index}}' src='{{item.url}}'></image>
+    </block>
+    <image class='images' bindtap='uploadImg' src='../../images/upload.png' wx:if='{{uploadImgs.length<4}}'></image>
+  </view>
+  <view class='btns'>
+    <button class='commit'  form-type="submit" disabled='{{isClick}}'>Submit</button>
+    <!-- <button class='commit' bindtap='commit' disabled='{{isClick}}'>提交</button> -->
+    <view class='commit' bindtap='deleteById' wx:if="{{id!=null}}">删除</view>
+  </view>
+</form>

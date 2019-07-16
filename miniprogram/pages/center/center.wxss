@@ -1,0 +1,46 @@
+page{
+  background: #f1f1f1;
+  font-size: 30rpx;
+}
+.header{
+  background: #32AFF2;
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+.user-logo{
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.user-name{
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.user-get{
+  border: 0px;
+  font-size: 30rpx;
+  background: #ffffff;
+  width:250rpx;
+  color: #32AFF2; 
+}
+.get-openid{
+  border: 0px;
+  font-size: 30rpx;
+  background: #ffffff;
+  width:300rpx;
+  color: #32AFF2; 
+}
+.weui-cells{
+  margin-top: 20rpx;
+}
+
+.weui-cells::after,.weui-cells::before{
+  border: 0px;
+}
+.weui-cell::before{
+  left: 0px;
+  border-top:1px solid #f1f1f1;
+}

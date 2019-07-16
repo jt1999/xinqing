@@ -1,0 +1,84 @@
+/* pages/publish-detail/publish-detail.wxss */
+page{
+  font-size: 30rpx;
+  background: #f1f1f1;
+}
+.page__bd{
+  background: #fff;
+}
+.like-session{
+   padding: 30rpx;
+   box-sizing: border-box;
+     /* background: #fff; */
+     border-top: 1px solid #f1f1f1;
+      /* margin-top: 10rpx; */
+}
+.like-top{
+text-align: right;
+}
+.like-top .text{
+  display: inline-block;
+  vertical-align: middle;
+  color: #cccccc;
+  /* margin-right: 20rpx; */
+}
+.like-top image{
+  display: inline-block;
+  width: 54rpx;
+  height: 54rpx;
+  margin-right: 4rpx;
+}
+.like-list{
+ 
+
+}
+.like-item{
+  width: 200rpx;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  height: 220rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.item-logo{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.item-name{
+  font-size: 24rpx;
+
+}
+.btns{
+text-align: center;
+margin-top: 30rpx;
+}
+.commit{
+  background: #32AFF2;
+  color: #fff;
+  border-radius: 5px;
+  width: 200rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30rpx;
+}
+.weui-location_session{
+  color: #cccccc;
+  font-size: 28rpx;
+  text-align: right;
+}
+.weui-location_icon{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.weui-location_text{
+  display: inline-block;
+  vertical-align: middle;
+}

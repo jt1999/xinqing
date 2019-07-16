@@ -1,0 +1,55 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">{{message.title}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">作者:{{message.author}}</view>
+                <view class="weui-article__title">时间:{{message.createTime}}</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p" style='padding-left:15rpx;box-sizing: border-box;'>{{message.content}}</view>
+                    <view class="weui-article__p">
+                        <block wx:for="{{images}}" wx:key='{{index}}'> 
+                            <image class="weui-article__img" src="{{item.url}}" mode="aspectFit" style="height: 180px" />     
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-location_session" wx:if='{{message.location}}'>
+                <image src='../../images/location.png' class='weui-location_icon'></image>
+                <view class='weui-location_text'>{{message.location}}</view>
+            </view>
+        </view>
+    </view>
+    <view class='like-session'>
+       <view class='like-top'>
+          <!-- <view class='text'>如同心声呀，点个赞</view> -->
+          <image bindtap='{{isLike?"cancelLike":"like"}}' src='{{isLike?"../../images/zantongfill.png":"../../images/zantong.png"}}'></image>
+          <view class='text'>{{message.count}}</view>
+       </view>
+       <!-- <view class='like-list'>
+          <view class='like-item'>
+              <image src='../../images/user-unlogin.png' class='item-logo'></image>
+              <view class='item-name'>姜小二</view>
+          </view>
+            <view class='like-item'>
+              <image src='../../images/user-unlogin.png' class='item-logo'></image>
+              <view class='item-name'>姜小二</view>
+          </view>
+            <view class='like-item'>
+              <image src='../../images/user-unlogin.png' class='item-logo'></image>
+              <view class='item-name'>姜小二</view>
+          </view>
+            <view class='like-item'>
+              <image src='../../images/user-unlogin.png' class='item-logo'></image>
+              <view class='item-name'>姜小二</view>
+          </view>
+            <view class='like-item'>
+              <image src='../../images/user-unlogin.png' class='item-logo'></image>
+              <view class='item-name'>姜小二</view>
+          </view>
+       </view> -->
+    </view>
+    <view class='btns' hidden='{{!isMy}}'>
+     <view class='commit' bindtap='deleteById' wx:if="{{id!=null}}">删除</view>
+    </view>
+</view>

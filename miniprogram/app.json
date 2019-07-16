@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/publish-list/publish-list",
+    "pages/center/center",
+    "pages/publish-detail/publish-detail",
+    "pages/publish/publish",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#32AFF2",
+    "navigationBarTitleText": "萝卜亭心情",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#32AFF2",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye_on.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode_on.png",
+        "pagePath": "pages/center/center",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+page{
+  background: #f1f1f1;
+}
+.weui-media-box::before{
+  border-top: 1px solid #f1f1f1;
+  left: 0px;
+}
+.weui-panel::before,.weui-panel::after{
+  border: 0px;
+}
+.weui-panel{
+  margin-top: 0px
+}

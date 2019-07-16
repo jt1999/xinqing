@@ -1,0 +1,23 @@
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__bd">
+    <block wx:for='{{list}}' wx:key='item._id'>
+      <navigator url="../publish-detail/publish-detail?id={{item._id}}&type=my" class="weui-media-box weui-media-box_appmsg" hover-class="none">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" mode='aspectFill' wx:if='{{!item.imgError}}' data-errIndex='{{index}}' binderror='bindErrorImg' src='{{item.images[0].url}}' />
+          <image class="weui-media-box__thumb" wx:else src='../../images/imgError.png' />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{item.title}}</view>
+          <view class="weui-media-box__desc">{{item.createTime}}</view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>
+<view class="weui-loadmore" hidden='{{!showload}}'>
+  <view class="weui-loading"></view>
+  <view class="weui-loadmore__tips">正在加载</view>
+</view>
+<!-- <view class="weui-loadmore weui-loadmore_line"  wx:if='{{list.length<=0&&!showload}}'>
+  <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+</view> -->

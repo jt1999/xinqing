@@ -1,0 +1,17 @@
+<view class='header'>
+  <image src='{{avatarUrl}}' class='user-logo'></image>
+  <button wx:if='{{!hasUserInfo}}' class='user-get' open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取微信信息</button>
+  <block wx:else>
+    <view class='user-name'>{{userInfo.nickName}}</view>
+  </block>
+</view>
+<view class="weui-cells weui-cells_after-title">
+  <view bindtap='goPage' data-url="../publish-list/publish-list" class="weui-cell weui-cell_access" >
+    <view class="weui-cell__bd">我发布的</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view bindtap='goPage' data-url="../publish/publish" class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">发布</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>

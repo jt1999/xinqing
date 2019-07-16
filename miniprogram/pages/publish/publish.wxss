@@ -1,0 +1,55 @@
+page{
+  background: #f1f1f1;
+  font-size: 30rpx;
+}
+.item{
+  background: #fff;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f1f1;
+}
+.item label{
+  display: inline-block;
+  width: 600rpx;
+      word-wrap: break-word;
+    word-break: break-all;
+    /* vertical-align: middle; */
+}
+.item textarea{
+  padding-left: 15rpx;
+  box-sizing: border-box;
+}
+.item input{
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  padding-left: 15rpx;
+  box-sizing: border-box;
+}
+.item-images{
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.images{
+  width: 172rpx;
+  height: 172rpx;
+  margin-right: 10rpx;
+}
+.commit{
+  background: #32AFF2;
+  color: #fff;
+  border-radius: 5px;
+  width: 200rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30rpx;
+}
+.commit:last-child{
+  margin-left: 10rpx;
+}
+.btns{
+text-align: center;
+margin-top: 30rpx;
+}
